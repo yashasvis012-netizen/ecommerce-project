@@ -1,0 +1,73 @@
+{
+  "raw_rows": 6180,
+  "missing_before": {
+    "order_date": 12,
+    "customer_name": 157,
+    "category": 65,
+    "quantity": 30,
+    "unit_price": 63,
+    "total_sales": 74,
+    "discount": 186,
+    "profit": 91,
+    "payment_method": 123,
+    "city": 126,
+    "state": 93
+  },
+  "distinct_labels_before": {
+    "category": 21,
+    "payment_method": 24,
+    "order_status": 14,
+    "city": 59,
+    "state": 45
+  },
+  "non_iso_dates_fixed": 1827,
+  "currency_text_prices_fixed": 181,
+  "percent_text_discounts_fixed": 237,
+  "unparseable_dates": 0,
+  "distinct_labels_after": {
+    "category": 6,
+    "payment_method": 6,
+    "order_status": 4,
+    "city": 18,
+    "state": 13
+  },
+  "exact_duplicates_removed": 180,
+  "duplicate_order_ids_removed": 0,
+  "filled_from_other_rows": {},
+  "unresolved_set_to_unknown": {
+    "customer_name": 12,
+    "city": 7,
+    "state": 0,
+    "payment_method": 120,
+    "order_status": 0
+  },
+  "invalid_rows_dropped": {
+    "missing_or_future_date": 24,
+    "missing_product": 0,
+    "non_positive_quantity": 12
+  },
+  "outliers_detected": {
+    "unit_price_iqr": 21,
+    "quantity_iqr": 24,
+    "invalid_discount": 10
+  },
+  "imputed": {
+    "unit_price": 87,
+    "quantity": 54,
+    "discount": 189
+  },
+  "total_sales_recalculated": 389,
+  "profit_estimated": 405,
+  "validation": {
+    "order_id is unique": true,
+    "no missing values": true,
+    "quantity > 0": true,
+    "unit_price > 0": true,
+    "0 <= discount <= 0.9": true,
+    "total_sales = qty x price x (1 - discount)": true,
+    "no future dates": true,
+    "categories are standard": true,
+    "statuses are standard": true
+  },
+  "final_rows": 5964
+}
